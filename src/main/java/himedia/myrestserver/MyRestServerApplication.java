@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"himdeia.myrestserver", "learnbyteaching.todos"} )
+@ComponentScan(basePackages= {"himedia.myrestserver", "learnbyteaching.todos"} )
 public class MyRestServerApplication {
 
 	public static void main(String[] args) {

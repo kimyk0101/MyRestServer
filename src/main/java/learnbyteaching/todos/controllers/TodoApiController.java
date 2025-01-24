@@ -23,8 +23,9 @@ import learnbyteaching.todos.repositories.dao.TodoRepository;
 import learnbyteaching.todos.repositories.vo.TodoItem;
 
 //	CORS 설정: 원칙적으로는 허용할 도메인을  정확하게 명시해야 한다.
-@CrossOrigin(origins="*",	//	모든 호스트로부터의 오리진 허가 (프로젝트할 때 이 방법 x)
-	methods= {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
+//@CrossOrigin(origins="*",	//	모든 호스트로부터의 오리진 허가 (프로젝트할 때 이 방법 x)
+//	methods= {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
+//	-> Global CORS 정책으로 위임
 @RequestMapping("/api/todos")
 @RestController	//	@Controller + ResponseBody
 public class TodoApiController  {
