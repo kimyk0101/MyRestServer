@@ -35,6 +35,7 @@ public class TodoApiController  {
 	
 	//	객체를 단순히 리턴만 하면 status 200번만 전송
 	//	보다 세밀한 응답 정보를 함께 보내고자 한다면 ResponseEntity를 사용
+	//	응답도 중요하지만 현재의 상태도 중요하기 때문에 최종적으로 ResponseEntity로 감싸서 응답 내보내기
 	@GetMapping
 //	public List<TodoItem> getAllTodos() {
 	public ResponseEntity<List<TodoItem>> getAllTodos() {
