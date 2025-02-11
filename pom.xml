@@ -74,6 +74,8 @@
 	</dependencies>
 
 	<build>
+		<!-- 최종 프로덕트 파일명 -->
+		<finalName>myrestserver</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
